@@ -1,10 +1,11 @@
-/data/    # 忽略根目录下的 data 目录及其所有内容
 *.pdf     # 忽略所有 PDF 文件（仓库任意位置）
 .venv/    # 忽略虚拟环境目录
 __pycache__/  # 忽略 Python 缓存文件目录
 *.pyc     # 忽略所有编译的 Python 文件
 .DS_Store  # 忽略 macOS 系统生成的文件
 
+# 忽略仓库任意位置的 data 目录及其所有内容
+data/
 # 深度学习实验产生的临时/大文件
 checkpoints/         # 模型检查点目录
 models/              # 保存的模型目录
