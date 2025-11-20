@@ -1,0 +1,59 @@
+/data/    # 忽略根目录下的 data 目录及其所有内容
+*.pdf     # 忽略所有 PDF 文件（仓库任意位置）
+.venv/    # 忽略虚拟环境目录
+__pycache__/  # 忽略 Python 缓存文件目录
+*.pyc     # 忽略所有编译的 Python 文件
+.DS_Store  # 忽略 macOS 系统生成的文件
+
+# 深度学习实验产生的临时/大文件
+checkpoints/         # 模型检查点目录
+models/              # 保存的模型目录
+weights/             # 权重文件目录
+runs/                # tensorboard/wandb 等输出目录
+logs/                # 日志目录
+results/             # 实验输出结果
+wandb/               # Weights & Biases 本地缓存
+mlruns/              # MLflow 本地运行记录
+.ipynb_checkpoints/  # Jupyter 检查点
+
+# 常见模型/数据二进制文件
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.hdf5
+*.t7
+*.onnx
+*.npy
+*.npz
+*.bin
+
+# 其他临时/缓存文件
+.cache/
+cache/
+*.log
+*.tar.gz
+*.zip
+*.pickle
+*.pkl
+
+# 优化/求解器相关的实例、解与日志
+*.sol        # 求解器输出的解文件
+*.mps        # MPS 实例文件
+*.lp         # LP 格式实例
+*.nl         # AMPL 非线性模型文件
+*.dat        # AMPL/GAMS 数据文件
+*.gms        # GAMS 模型文件
+*.lst        # 求解器列出/报告文件
+*.sav        # CPLEX 保存文件
+
+# 基准、实例与实验目录
+benchmarks/
+instances/
+instances_backup/
+solutions/        # 保存解的目录
+solver_logs/      # 求解器专用日志
+profiles/         # 性能/配置剖面数据
+plots/
+figures/
+tmp_results/
